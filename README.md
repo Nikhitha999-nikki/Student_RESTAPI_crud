@@ -19,23 +19,14 @@ Postman – API testing
 Student_RESTAPI_crud
 
 │── src/main/java/stu/example/student
-
 │   ├── controller        # REST endpoints (API layer)
-
 │   ├── model             # Student data model
-
 │   ├── StudentApplication.java   # Entry point
-
 │
-
 │── src/main/resources     # Configuration files
-
 │── src/test/java/...      # Test classes
-
 │
-
 │── pom.xml                # Project dependencies
-
 │── README.md
 
 
@@ -69,5 +60,11 @@ The application exposes REST endpoints for:
 | DELETE | Delete student         |
 
 # Postman :
-
+# POST
 ![POST](resources/create.png)
+# GET
+![GET](resources/get.png)
+# PUT
+![UT](resources/update.png)
+# DELETE
+![DELETE](resources/delete.png)
