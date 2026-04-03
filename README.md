@@ -1,5 +1,3 @@
-# 📘 Student REST API (CRUD)
+📘 Student REST API (CRUD)
 
-A simple and efficient Student Management REST API built using Spring Boot. This project demonstrates backend development concepts like CRUD operations, RESTful services, and database integration.
-
-# 🚀 Features
+A lightweight and well-structured RESTful API built using Spring Boot to manage student data. This project demonstrates core backend concepts like HTTP methods, request handling, and JSON-based communication.
