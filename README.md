@@ -2,37 +2,60 @@
 
 A lightweight and well-structured RESTful API built using Spring Boot to manage student data. This project demonstrates core backend concepts like HTTP methods, request handling, and JSON-based communication.
 
-🛠️ Tech Stack
+# 🛠️ Tech Stack
+
 Java – Core programming language
+
 Spring Boot – Backend framework
+
 Spring Web – REST API development
+
 Maven – Dependency management
+
 Postman – API testing
 
-📂 Project Structure
+
+# 📂 Project Structure
 Student_RESTAPI_crud
+
 │── src/main/java/stu/example/student
+
 │   ├── controller        # REST endpoints (API layer)
+
 │   ├── model             # Student data model
+
 │   ├── StudentApplication.java   # Entry point
+
 │
+
 │── src/main/resources     # Configuration files
+
 │── src/test/java/...      # Test classes
+
 │
+
 │── pom.xml                # Project dependencies
+
 │── README.md
 
-⚙️ Getting Started
+
+# ⚙️ Getting Started
+
 1. Clone the Repository
+   
    git clone https://github.com/Nikhitha999-nikki/Student_RESTAPI_crud.git
+   
    cd Student_RESTAPI_crud
 
-2. Run the Application
+3. Run the Application
+   
 Open the project in any Java IDE (IntelliJ / Eclipse)
+
 Run StudentApplication.java
 
-4. Server
-   http://localhost:8080
+5. Server
+   
+   http://localhost:8081
 
 📬 API Endpoints
 
@@ -47,4 +70,4 @@ The application exposes REST endpoints for:
 
 # Postman :
 
-![POST](your-image-link)
+![POST](resources/create.png)
