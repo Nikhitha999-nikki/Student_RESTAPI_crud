@@ -73,4 +73,5 @@ The application exposes REST endpoints for:
 ![UT](resources/update.png)
 # DELETE
 ![DELETE](resources/delete.png)
+# MySQL
 ![DELETE](resources/mysql.png)
