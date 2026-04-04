@@ -12,6 +12,10 @@ Spring Web – REST API development
 
 Maven – Dependency management
 
+SpringDataJpa - db Communication
+
+MySQL - DB
+
 Postman – API testing
 
 
@@ -23,6 +27,10 @@ Student_RESTAPI_crud
 │   ├── controller        # REST endpoints (API layer)
 
 │   ├── model             # Student data model
+
+│   ├── Service
+
+│   ├── repository
 
 │   ├── StudentApplication.java   # Entry point
 │
