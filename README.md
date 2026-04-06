@@ -32,6 +32,8 @@ Student_RESTAPI_crud
 
 │   ├── repository
 
+│   ├── exception
+
 │   ├── StudentApplication.java   # Entry point
 │
 │── src/main/resources     # Configuration files
