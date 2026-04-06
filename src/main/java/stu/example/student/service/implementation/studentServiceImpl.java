@@ -4,6 +4,7 @@ import java.util.List;
 
 import org.springframework.stereotype.Service;
 
+import stu.example.student.exception.StudentNotFoundException;
 import stu.example.student.model.Student;
 import stu.example.student.repository.studentRepository;
 import stu.example.student.service.studentService;
@@ -32,8 +33,8 @@ public class studentServiceImpl implements studentService {
 
     @Override
     public Student getStudent(Integer id) {
-        return studentRepository.findById(id)
-                .orElseThrow(() -> new RuntimeException("Student not found with id: " + id));
+        if(studentRepository.findById(id).isEmpty()) throw new StudentNotFoundException("student not exist");
+        return studentRepository.findById(id).get();
     }
 
     @Override
