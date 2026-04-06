@@ -82,4 +82,4 @@ The application exposes REST endpoints for:
 # DELETE
 ![DELETE](resources/delete.png)
 # MySQL
-![DELETE](resources/mysql.png)
+![sql](resources/mysql.png)
