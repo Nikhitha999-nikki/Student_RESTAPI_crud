@@ -2,6 +2,8 @@ package stu.example.student.controller;
 
 import java.util.List;
 
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -12,6 +14,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import stu.example.student.model.Student;
+import stu.example.student.response.ResponseHandler;
 import stu.example.student.service.studentService;
 
 @RestController
@@ -23,9 +26,9 @@ public class studentAPIController {
         this.studentService = studentService;
     }
    @GetMapping("{id}")
-    public Student get(@PathVariable("id")Integer id){
+    public ResponseEntity<Object> get(@PathVariable("id")Integer id){
         // db.addStudent(student);
-        return studentService.getStudent(id);
+        return ResponseHandler.responseBuilder("your requested student details here..",HttpStatus.OK,studentService.getStudent(id));
     }
     @GetMapping()
     public List<Student> getAll(){
