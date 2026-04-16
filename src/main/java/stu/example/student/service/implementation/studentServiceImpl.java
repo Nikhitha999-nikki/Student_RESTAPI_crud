@@ -7,10 +7,10 @@ import org.springframework.stereotype.Service;
 import stu.example.student.exception.StudentNotFoundException;
 import stu.example.student.model.Student;
 import stu.example.student.repository.studentRepository;
-import stu.example.student.service.studentService;
+import stu.example.student.service.StudentService;
 
 @Service
-public class studentServiceImpl implements studentService {
+public class studentServiceImpl implements StudentService {
 
     studentRepository studentRepository;
 

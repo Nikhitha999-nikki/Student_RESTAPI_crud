@@ -4,7 +4,7 @@ import java.util.List;
 
 import stu.example.student.model.Student;
 
-public interface studentService {
+public interface StudentService {
     public String createStudent(Student student);
     public String updateStudent(Student student);
     public Student getStudent(Integer id);

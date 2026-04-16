@@ -5,6 +5,10 @@ spring:
     password: Nikhitha09
     driver-class-name: com.mysql.cj.jdbc.Driver
 
+  mvc:
+    pathmatch:
+      matching-strategy: ANT_PATH_MATCHER
+
   jpa:
     hibernate:
       ddl-auto: update   # or create
