@@ -12,7 +12,7 @@ import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
-
+import io.swagger.v3.oas.annotations.Operation;
 import stu.example.student.model.Student;
 import stu.example.student.response.ResponseHandler;
 import stu.example.student.service.StudentService;
@@ -26,6 +26,7 @@ public class StudentAPIController {
         this.studentService = studentService;
     }
    @GetMapping("{id}")
+   @Operation(summary="Get student by ID", description="Retrieve student details by ID")
     public ResponseEntity<Object> get(@PathVariable("id")Integer id){
         // db.addStudent(student);
         return ResponseHandler.responseBuilder("your requested student details here..",HttpStatus.OK,studentService.getStudent(id));
